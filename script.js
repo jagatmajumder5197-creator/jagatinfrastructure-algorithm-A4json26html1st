@@ -6,7 +6,7 @@ let allStudents = [];
 const subjects = [
   { name: 'BENGALI', fm: 'FMB', written: 'WTB', oral: 'OLB' },
   { name: 'ENGLISH', fm: 'FME', written: 'WTE', oral: 'OLE' },
-  { name: 'MATHEMATICS', fm: 'FMM', written: 'WTM', oral: 'OLM' },
+  { name: 'MATHS', fm: 'FMM', written: 'WTM', oral: 'OLM' },
   { name: 'HINDI', fm: 'FMHN', written: 'WTHN', oral: 'OLHN' },
   { name: 'COMPUTER', fm: 'FMCM', written: 'WTCM', oral: 'OLCM' },
   { name: 'GK', fm: 'FMGK', written: 'WTGK', oral: 'OLGK' },
@@ -169,11 +169,11 @@ function getFmBreakdown(fm, writtenVal, studentClass, subject) {
       return { written: '', oral: 50 };
     }
 
-    const hindiClasses = ['UKG_A', 'UKG_B', 'I (A)', 'I (B)'];
-    const isHindi = (subject === 'HN' || subject === 'HINDI');
+    const computerClasses = ['UKG_A', 'UKG_B'];
+    const isComputer = (subject === 'CM' || subject === 'COMPUTER');
 
-    if (hindiClasses.includes(studentClass) && isHindi) {
-      return { written: 40, oral: 10 };
+    if (computerClasses.includes(studentClass) && isComputer) {
+      return { written: "", oral: 50 };
     }
 
     return { written: 45, oral: 5 };
