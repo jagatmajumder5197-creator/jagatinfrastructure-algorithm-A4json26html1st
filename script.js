@@ -1,8 +1,6 @@
 const WEB_APP_URL =
-  'https://script.google.com/macros/s/AKfycbyOnxQqelRC93Xmx61AHsmX3XsB6u3qKK_LtY0miKigHQGwH2fz75Ho1hxy8YoYYsYWQQ/exec';
-
-"https://docs.google.com/spreadsheets/d/1juCMhqIB-6SJMulWiBJ6oKhBySNv8Cn6AHD40e1oXkY/edit";
-
+ 
+'https://script.google.com/macros/s/AKfycbyNApf1tq6L7JMKt37bp_XrRl6PHBrJFSraFzYpK2zHQgIfNmPeSVZACzKG5XfUQE2Pkg/exec';
 
 let allStudents = [];
 
